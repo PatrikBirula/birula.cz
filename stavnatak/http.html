@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_stavnatak.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="Jquery.js"></script>
+    <script src="script_stavnatak.js"></script>
+    <script src="ityped.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Co jsem si měl zjistit a co jsem vlastně zjistil</h1>
+    </header>
+
+    <article>
+        <ul class="navigation">
+            <li><a href="ajax_gallery1.html">AJAX <br>+ request a response</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="http.html">HTTP status codes</a></li>
+        </ul>
+    </article>
+    <section class="content">
+        <div class="changecontent">
+            <article class="mynewinformation" id="httpinfo">
+                <h2>HTTP stavový kód = informace o proběhnutí přenosu dat</h2>
+                <p>Dle HTTP stavového kódu dokážeme určit, zdali vše proběhlo v pořádku, nebo kde je chyba. Mezi
+                    nejčastější
+                    patří <strong>200 = Vše OK</strong> a <strong>404 = Nenalezeno</strong></p>
+                <h2>Typy kódů</h2>
+                <p>Máme celkem 5 typů Informační (1xx), Úspěch (2xx), Přesměrování (3xx), Chyba uživatele (4xx) a Chyba
+                    serveru
+                    (5xx).</p>
+                <h2>Příklady aplikací API</h2>
+                <div class="wrapperhttpcodes">
+                    <div class="httpcodes" id="apiexample1">
+                        <h3>Informační (1xx)</h3>
+                        <ul>
+                            <li>100 = Pokračovat</li>
+                            <li>101 = Přepnout protokol</li>
+                        </ul>
+                    </div>
+                    <div class="httpcodes" id="apiexample2">
+                        <h3>Úspěch (2xx)</h3>
+                        <ul>
+                            <li>200 = Vše v pořádku</li>
+                            <li>201 = Vytvořeno</li>
+                            <li>202 = Přijato</li>
+                            <li>203 = Neoprávněné informace</li>
+                            <li>204 = Žádný obsah</li>
+                            <li>205 = Obnovit obsah</li>
+                            <li>206 = Částečný obsah</li>
+                        </ul>
+                    </div>
+                    <div class="httpcodes" id="apiexample3">
+                        <h3>Přesměrování</h3>
+                        <ul>
+                            <li>300 = Více možností</li>
+                            <li>301 = Trvalé přesměrování</li>
+                            <li>302 = Nalezeno</li>
+                            <li>303 = Viz další</li>
+                            <li>304 = Beze změny</li>
+                            <li>305 = Použijte proxy</li>
+                            <li>306 = Rezervováno, ale neopoužito</li>
+                            <li>307 = Dočasné přesměrování</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapperhttpcodes2">
+                    <div class="httpcodes" id="apiexample4">
+                        <h3>Chyba serveru</h3>
+                        <ul>
+                            <li>500 = Interní chyba serveru</li>
+                            <li>501 = Není implementováno</li>
+                            <li>502 = Bad Gateway</li>
+                            <li>503 = Služba není k dispozici</li>
+                            <li>504 = Časový limit brány vypršel</li>
+                            <li>505 = Verze HTTP není podporována</li>
+                            <li>509 = Byl překročen limit šířky pásma</li>
+                        </ul>
+                    </div>
+                    <div class="httpcodes" id="apiexample6">
+                        <h3>Chyba uživatele</h3>
+                        <ul>
+                            <li>400 = Špatný požadavek</li>
+                            <li>401 = Neoprávněné připojení</li>
+                            <li>402 = Požadovaná platba</li>
+                            <li>403 = Zakázáno</li>
+                            <li>404 = Nenalezeno</li>
+                            <li>405 = Metoda není povolena</li>
+                            <li>406 = Nepřijatelné</li>
+                            <li>407 = Vyžaduje se ověření proxy</li>
+                            <li>408 = Časový limit požadavku vypršel</li>
+                            <li>409 = Konflikt na síti</li>
+                            <li>410 = Data jsou pryč</li>
+                            <li>411 = Požadovaná délka neodpovídá</li>
+                            <li>412 = Předpoklad se nezdařil</li>
+                            <li>413 = Žádost o entitu je příliš velká</li>
+                            <li>414 = Žádost-URI je příliš dlouhý</li>
+                            <li>415 = Nepodporovaný typ média</li>
+                            <li>416 = Požadovaný rozsah není uspokojivý</li>
+                            <li>417 = Očekávání se nezdařilo</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Patrik Birula",
+        "age": "věk: 26 let",
+        "location": "Náchod",
+        "image": "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
+    },
+    {
+        "name": "Gimli",
+        "age": "věk: 85 let",
+        "location": "Mórie",
+        "image": "https://1gr.cz/fotky/lidovky/17/112/c460/JTO6f5eff_Gimli.jpg"
+    },
+    {
+        "name": "Legolas",
+        "age": "věk: 450 let",
+        "location": "Temný hvozd",
+        "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2018/06/legolas-no-sense-2.jpg"
+    },
+    {
+        "name": "Elrond",
+        "age": "věk: 950 let",
+        "location": "Roklinka",
+        "image": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/09/elrond-LOTR-thumb.jpg"
+    },
+    {
+        "name": "Galadriel",
+        "age": "věk: 1 000 000 let",
+        "location": "Noldor",
+        "image": "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fwinteriscoming.net%2Ffiles%2F2018%2F11%2FGaladriel.jpg"
+    }
+]

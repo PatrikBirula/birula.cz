@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_stavnatak.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="Jquery.js"></script>
+    <script src="script_stavnatak.js"></script>
+    <script src="ityped.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Co jsem si měl zjistit a co jsem vlastně zjistil</h1>
+    </header>
+
+    <article>
+        <ul class="navigation">
+            <li><a href="ajax_gallery1.html">AJAX <br>+ request a response</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="http.html">HTTP status codes</a></li>
+        </ul>
+    </article>
+
+    <section class="content">
+        <div class="changecontent">
+            <article class="mynewinformation" id="ajaxinfo">
+                <h2>Request = dotaz na server</h2>
+                <p>
+                    Request je např. již při prvním načtení stránky, kdy se serveru zeptám "Hej, chci otevřít tuhle
+                    stránku!"
+                    Nebo "Potřebuju tuhle informaci".
+                </p>
+
+                <h2>Response = odpověď serveru</h2>
+                <p>
+                    Response je zase, kdy mi server řekne "Jasně, stáhni si tohle a tohle".
+                </p>
+
+                <h2>AJAX = slouží pro vytváření interaktivní webů.</h2>
+                <p>Jednou z hlavních předností je, že zabraňuje neustálemu reloadování stránek, protože si získává info
+                    ze
+                    serveru na pozadí. Dále se přes něho můžeme průběžně ptát serveru například, zda není zadávaný nick
+                    již
+                    obsazený, anebo vytvořit našeptávač. Může sloužit i pro přihlašování, kde kontroluje zda souhlasí
+                    jméno
+                    a
+                    heslo. Dále umožňuje vytáhnout element z jiné stránky a přiřadit jej na aktuální.
+                </p>
+            </article>
+            <section class="examples">
+                <div class="wrapper">
+                    <h2>Formulář bez reloadu</h2>
+                    <form method="POST" id="exampleform" action="process.php">
+                        <input type="text" name="firstname" id="firstname" placeholder="Jméno">
+                        <input type="text" name="lastname" id="lastname" placeholder="Příjmení"><br>
+                        <input type="submit" value="Řekni mi něco hezkého" class="gombik">
+                    </form>
+                </div>
+                <div class="wrapper wrgallery">
+                    <h2>Změna galerie bez reloadu</h2>
+
+                    <ul class="gallerymenu">
+                        <li><a href="ajax_gallery1.html">Obrázek č.1</a></li>
+                        <li><a href="ajax_gallery2.html">Obrázek č.2</a></li>
+                    </ul>
+                    <section class="gallery">
+                        <div class="gallery-set" id="kontakty">
+                            <a href="img_stavnatak/Email.png">
+                                <img src="img/Email.png">
+                            </a>
+                            <a href="img_stavnatak/telcontact.png">
+                                <img src="img/telcontact.png">
+                            </a>
+                            <a href="img_stavnatak/Facebook.png">
+                                <img src="img/Facebook.png">
+                            </a>
+                            <a href="img_stavnatak/Instagram.png">
+                                <img src="img/Instagram.png">
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="wrapper-naseptavac">
+                    <h2>Našeptávač</h2>
+
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Zadejte jméno" class="form-control">
+                    </div>
+                    <ul class="list-group" id="result">
+
+                    </ul>
+
+
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>

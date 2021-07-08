@@ -1,0 +1,2000 @@
+///Proměnné
+
+//Barvy
+$main_color: #080C17;
+$red_color: #f50010;
+$blue_color: #479DC2;
+$green_color: #15ff00;
+
+///////////////////////////////////
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+body{
+    min-height: 100vh;
+    background: #080C17;
+    color: #E4E0F5;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+//Úvodní obrazovka
+.mainscreen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: {
+        top: 5%;
+    };
+}
+.square1{
+    width: 25%;
+    height: 100%;
+    img{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.square1:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid #fff;
+    filter: blur(5px);
+    animation: draw 1s linear forwards;
+}
+@keyframes draw {
+    0%{
+        width: 0%;
+        height: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $red_color;
+        border-left-color: transparent;
+        
+    }
+    50%{
+        width: 100%;
+        height: 0%;
+        border-top-color: transparent ;
+        border-right-color: transparent;
+        border-bottom-color: $red_color;
+        border-left-color: $red_color;
+    }
+    
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $red_color;
+        border-left-color: $red_color;
+    }
+    
+}
+.square1:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    filter: blur(5px);
+    animation: draw2 1s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes draw2 {
+    0%{
+        width: 0%;
+        height: 0%;
+        border-top-color: $red_color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    
+   50%{
+        width: 100%;
+        height: 0%;
+        border-top-color: $red_color;
+        border-right-color: $red_color;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:  $red_color;
+        border-right-color: $red_color;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    
+}
+.hoverSQ1:hover{
+    box-shadow: 0 0 50px $red_color,
+                    inset 0 0 50px $red_color;
+}
+.square2{
+    width: 25%;
+    height: 100%;
+    img{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.square2:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid #fff;
+    filter: blur(5px);
+    animation: draw3 1s linear forwards;
+}
+@keyframes draw3 {
+    0%{
+        width: 0%;
+        height: 0%;
+        border-top-color: $green_color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        
+    }
+    50%{
+        width: 100%;
+        height: 0%;
+        border-top-color: $green_color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: $green_color;
+    }
+    
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: $green_color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: $green_color;
+    }
+    
+}
+.square2:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 10px solid transparent;
+    filter: blur(5px);
+    animation: draw4 1s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes draw4 {
+    0%{
+        width: 0%;
+        height: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $green_color;
+        border-left-color: transparent;
+    }
+    
+   50%{
+        width: 100%;
+        height: 0%;
+        border-top-color: transparent;
+        border-right-color: $green_color;
+        border-bottom-color: $green_color;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: $green_color;
+        border-bottom-color: $green_color;
+        border-left-color: transparent;
+    }
+    
+}
+.hoverSQ2:hover{
+    box-shadow: 0 0 50px $green_color,
+                    inset 0 0 50px $green_color;
+}
+.aboutme{
+    width: 30%;
+    max-height: 57rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    img{
+        width: 100%;
+        margin: {
+            top:-2%;
+            bottom:-12%;
+        };
+
+    }
+    .aboutmewrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    }
+    h1{
+        text-align: center;
+    }
+    .h1ityped{
+        width: 100%;
+        height: 100%;
+    }
+    .cvbtn{
+        width: 30%;
+        font-size: 2rem;
+        text-decoration: none;
+        text-align: center;
+        color: red;
+        border: 5px solid #fff;
+        box-shadow: 0 0 10px #479DC2,
+                    inset 0 0 10px #479DC2;
+        margin: {
+            top: 2%;
+        };
+        padding: {
+            top: 1%;
+            bottom: 1%;
+        };            
+    }
+    .cvbtn:hover{
+        color: #0f0;
+        transition: color .5s;
+        cursor: pointer;
+        box-shadow: 0 0 15px #479DC2,
+                    inset 0 0 15px #479DC2;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////
+//Část "Tvorba webových stránek
+//
+.aboutwebsites{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .firstmessage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        margin-bottom: 1%;
+    }
+    p{
+        width: 70%;
+        padding: {
+            top: 2%;
+            bottom: 2%;
+        };
+        text-align: justify;
+    }
+}
+.homerjoke{
+    width: 30%;
+    position: relative;
+}
+.homer{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    left: 161%;
+}
+.marge{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    right: 146%;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.webgallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.webgallerywrapper{
+    width: 30%;
+    margin: {
+        bottom: 2%;
+    };
+    img{
+        width: 80%;
+    }
+    text-align: center;
+    h3{
+        font-size: 2.5rem;
+        margin: {
+            top: 10%;
+            bottom: 5%;
+        };
+    }
+}
+.imgborder:hover{
+    box-shadow: 0 0 25px $red_color,
+                    inset 0 0 30px $red_color;
+}
+.joke{
+    cursor: crosshair;
+}
+///////////////////////////////////////////////////////////////////////
+//Část Grafiky
+//
+.aboutgraphics{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .firstmessage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        margin-bottom: 1%;
+    }
+    p{
+        width: 70%;
+        padding: {
+            top: 2%;
+            bottom: 2%;
+        };
+        text-align: justify;
+    }
+}
+.graphicgallery{
+    position: relative;
+    background: #e4e4e4;
+    z-index: -10;
+    width: 50rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 10px solid #fff;
+    box-shadow: 0 0 20px #0f0,
+                inset 0 0 20px #0f0;
+    padding: {
+        top: 2%;
+        bottom: 2%;
+    };
+}
+.bugs{
+    width: 30%;
+}
+.picingall{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#logs{
+    z-index: -1;
+}
+#girls{
+    z-index: -2;
+}
+#pictures{
+    z-index: -3;
+}
+///////////////////////////////////////////////////////////////////////
+//Nastavení kontaktů
+//
+.contactbtn{
+    width: 30%;
+    background: #080C17;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: {
+        top: 1%;
+        bottom: 1%;
+    };
+    margin: {
+        bottom: 3%;
+    };
+    border: 0.5vh solid #fff;
+}
+#webcontactbtn{
+    box-shadow: 0 0 1vh red,
+                inset 0 0 1vh red;
+    }
+#webcontactbtn:hover{
+    box-shadow: 0 0 3vh red,
+                inset 0 0 3vh red;
+    
+}
+#graphiccontactbtn{
+    margin-top: 2%;
+    box-shadow: 0 0 1vh #0f0,
+                inset 0 0 1vh #0f0;
+}
+#graphiccontactbtn:hover{
+    box-shadow: 0 0 3vh #0f0,
+                inset 0 0 3vh #0f0;
+}
+#cvcontactbtn{
+    box-shadow: 0 0 1vh red,
+                inset 0 0 1vh red;
+    width: 90%;
+    margin: {
+        top: 2%;
+    };
+    padding: {
+        top: 2.5%;
+        bottom: 2.5%;
+    };
+    font-size: 2rem;
+    }
+#cvcontactbtn:hover{
+    box-shadow: 0 0 3vh red,
+                inset 0 0 3vh red;
+    
+}
+.contacts{ 
+    display: none; ///nezapomenout nastavit v JS aby se měnilo na display Flex
+    flex-direction: column;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    background: #121236;
+    border: 0.5vh solid #fff;
+    z-index: 5;
+    .logo{
+        margin: 0 auto;
+        width: 30%;
+    }
+    padding: {
+        top: 0.5%;
+        bottom: 2%;
+    };
+}
+.contactswrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactwrapper{
+    width: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #fff;
+        }
+        font-size: 2rem;
+    }
+    img{
+        width: 100%;
+    }
+    margin: {
+        top: -2%;
+    };
+}
+.crosswrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: {
+        top: 0%;
+        right: 2%;
+    };
+}
+.cross{
+    text-decoration: none; 
+    color: #fff;
+    font-size: 5rem;
+    cursor: pointer;
+
+}
+#webcontacts{
+    box-shadow: 0 0 2vh red,
+                inset 0 0 2vh red;
+}
+.back-to-top{
+    color: $red_color;
+	position: fixed;
+	bottom: 1rem;
+	right: 3rem;
+	z-index: 10;
+	display: block;
+	opacity: 0.7;
+}
+.back-to-top:hover{
+	opacity: 1;
+    color: $green_color;
+	transition: 0.3s;
+}
+///////////////////////////////////////////////////////////////////////////////////
+//Nastavení CV
+//
+.cvhead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+        font-size: 4rem;
+        margin-bottom: 0%;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    margin-bottom: 2%;
+}
+.cvbody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: justify;
+    order: 2;
+}
+.whyprogrammer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    p{
+        font-size: 2rem;
+        padding: {
+            top: 1%;
+            bottom: 1%;
+        };
+        text-indent: 1rem;
+    }
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+.cvh3red{
+    text-shadow: 0 0 0.5rem $red_color, 0 0 1rem $red_color;
+}
+.cvh3green{
+    text-shadow: 0 0 0.5rem $green_color, 0 0 1rem $green_color;
+}
+.cvphoto{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    p{
+            width: 130%;
+            margin-top: 5%;
+        }
+
+}
+.cvphoto{
+    width: 20%;
+    display: flex;
+    
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    p{
+            width: 130%;
+            margin-top: 5%;
+        }
+
+}
+.cvphotosecret{
+    display: none;
+    width: 20%;
+    margin-top: 5%;
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.myknowledge{
+    width: 30%;
+    margin-top: 0%;
+    .boxshadow-red{
+        box-shadow: 0 0 15px $red_color,
+                    inset 0 0 15px $red_color;
+        border-radius: 110px;
+    }
+    .boxshadow-green{
+        box-shadow: 0 0 15px $green_color,
+                    inset 0 0 15px $green_color;
+        border-radius: 110px;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        padding: {
+            top: 1%;
+            bottom: 1%;
+        };
+        list-style-type: none;
+        h5{
+        width: 30%;
+    }
+    }
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 2rem;
+        padding: {
+            top: 2%;
+            bottom: 1%;
+        };
+        text-indent: 1rem;
+    }
+    .idea{
+        width: 57%;
+        color: $green_color;
+        display: none;
+        text-align: left;
+    }
+    .resultbtn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 30%;
+        height: 3rem;
+        margin: 0 auto;
+        padding: {
+            top: 1%;
+            bottom: 1%;
+        };
+        position: relative;
+        outline: none;
+        border: none;
+        text-align: center;
+    }
+    .resultbtn:before{
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 2px solid transparent;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+    .resultbtn:after{
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 2px solid transparent;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+    .resultbtn:hover:before{
+        height: 3rem;
+        width: 100%;
+        border: 5px solid $red_color;
+        filter: blur(2px);
+        border-right: none;
+        border-bottom: none;
+        transition: height 0.5s linear;
+        transition: width 0.5s linear;
+    }
+    .resultbtn:hover::after{
+        height: 3rem;
+        width: 100%;
+        border: 5px solid $green_color;
+        filter: blur(2px);
+        border-left: none;
+        border-top: none;
+        transition: height 0.5s linear;
+        transition: width 0.5s linear;
+    }
+    .result{
+        width: 100%;
+        height: 3rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: $green_color;
+        position: relative;
+    }
+    a{
+        color: #479DC2;
+    }
+}
+.button-area{
+    width: 13%;
+    height: 3rem;
+    position: relative;
+    .main-button{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #e4e4e4;
+        border-radius: 110px;
+    }
+    .checkbox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 100;
+        opacity: 0;
+        text-align: center;
+    }
+    .checkboxtext:after{
+        content: 'NE';
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        width: 45%;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background: $red_color;
+        border: 1px solid black;
+        color: #fff;
+        text-align: center;
+        line-height: 2.5rem;
+        border-radius: 100%;
+        transition: .4s;
+    }
+    .checkbox:checked + .checkboxtext:after{
+        content: "ANO";
+        left: 50%;
+        background: green;
+    }
+}
+.formular{
+    display: none;
+    width: 70%;
+    background-color: #121236;
+    position: fixed;
+    top: 10;
+    left: 10;
+    text-align: center;
+    border: 0.5vh solid #fff;
+     box-shadow: 0 0 2vh $red_color,
+                inset 0 0 2vh $red_color;
+    h2{
+        margin-top: -2%;
+    }
+    .formrow{
+        width: 50rem;
+        text-align: center;
+        padding: {
+            top: .5%;
+            bottom: .5%;
+        };
+        margin: {
+            top: 1%;
+            bottom: 1%;
+        };
+    }
+    .formarea{
+        text-align: center;
+    }
+    .formsubmit{
+        margin: {
+            top: 1%;
+            bottom: 1%;
+        };
+        padding: {
+            top: .5%;
+            bottom: .5%;
+            left: .5%;
+            right: .5%;
+        };
+    }
+    .formsubmit:hover{
+        cursor: pointer;
+    }
+}
+.form-result{
+    background-color: $main_color;
+    width: 70%;
+    height: 12rem;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: center;
+    padding-top: 4%;
+    border: 0.5vh solid #fff;
+    border-radius: 2em;
+}
+.succes{
+    color: $green_color;
+    box-shadow: 0 0 2vh $green_color,
+                inset 0 0 2vh $green_color;
+}
+.error{
+    color: $red_color;
+    box-shadow: 0 0 2vh $red_color,
+                inset 0 0 2vh $red_color;
+}
+#feedbacktextsecret{
+        display: none;
+    }
+//Stylování pro vypisování
+.ityped-cursor {
+    font-size: 100%;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+.cvh1ityped:after{
+    content: '|';
+    color: $green_color;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+.cvh2ityped:after{
+    content: '|';
+    color: $blue_color;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+.cvh3ityped:after{
+    content: '|';
+    color: $red_color;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+.cvh4ityped:after{
+    content: '|';
+    color: $red_color;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+.cvh5ityped:after{
+    content: '|';
+    color: $red_color;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+.no-after:after{
+    content: none;
+}
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+///MediaQueries 
+@media screen and (max-width: 1920px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .aboutme{
+        height: 100%;
+        h1{
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .webgallerywrapper{
+        h3{
+            font-size: 1.7rem;
+        }
+    }
+    .graphicgallery{
+        height: 30rem;
+    }
+    .contacts{
+        top: 2%;
+        left: 10%;
+        width: 80%;
+        padding: {
+            top: 0.5%;
+            bottom: 0.5%;
+        };
+    }
+    .contactwrapper{
+        h3 a {
+            font-size: 1.2rem;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .whyprogrammer{
+        margin-top: -5%;
+        p{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.7rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: -5%;
+        h3{
+            font-size: 1.7rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .aboutme{
+        h1{
+            font-size: 2.1rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+        .cvbtn{
+            font-size: 1.5rem;
+        }
+    }
+    
+    h1{
+        font-size: 2.1rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    .webgallerywrapper{
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+    .graphicgallery{
+        height: 20rem;
+        width: 150%;
+    }
+    .MQ1600{
+        p{
+            padding: {
+                bottom: 0;
+                top: 0;
+            }
+        }
+    }
+    .homer{
+        top: 1rem;
+    }
+    .marge{
+        top: 1rem;
+    }
+    .contacts{
+        top: 2%;
+        left: 10%;
+        width: 80%;
+        padding: {
+            top: 0.5%;
+            bottom: 0.5%;
+        };
+    }
+    .contactwrapper{
+        h3 a {
+            font-size: 1rem;
+        }
+        width: 15%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .cross{
+        font-size: 1.5rem;
+    }
+    .contactbtn{
+        margin-bottom: 1%;
+    }
+    .presentation{
+        h2{
+            margin-bottom: 10%;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 2.1rem;
+        }
+        h2{
+            font-size: 1.7rem;
+        }
+    }
+    .whyprogrammer{
+        margin-top: -5%;
+        p{
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: 1.3rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: -5%;
+        h3{
+            font-size: 1.3rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1.2rem;
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 1.2rem;
+        }
+    }
+    .button-area{
+        height: 2rem;
+        .checkboxtext:after{
+            height: 1.6rem;
+            font-size: 0.7rem;
+            top: 5%;
+            left: 1%;
+            line-height: 1.6rem;
+        }
+    }
+    .cvphoto{
+        p{
+            width: 130%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .aboutme{
+        h1{
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .cvbtn{
+            font-size: 1.2rem;
+        }
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .webgallerywrapper{
+        h3{
+            font-size: 1.1rem;
+        }
+    }
+    .graphicgallery{
+        height: 20rem;
+        width: 150%;
+    }
+    .MQ1600{
+        p{
+            padding: {
+                bottom: 0;
+                top: 0;
+            }
+        }
+    }
+    .contacts{
+        top: 2%;
+        left: 10%;
+        width: 80%;
+        padding: {
+            top: 0.5%;
+            bottom: 0.5%;
+        };
+    }
+    .contactwrapper{
+        h3 a {
+            font-size: 0.8rem;
+        }
+        width: 15%;
+    }
+    .logo{
+        width: 10%;
+    }
+    .cross{
+        font-size: 1.5rem;
+    }
+    .contactbtn{
+        margin-bottom: 1%;
+    }
+    .presentation{
+        h2{
+            margin-bottom: 1%;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    .whyprogrammer{
+        margin-top: -5%;
+        p{
+            font-size: 0.9rem;
+        }
+        h3{
+            font-size: 1rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: -5%;
+        h3{
+            font-size: 1rem;
+        }
+        h4{
+            font-size: 0.9rem;
+        }
+        p{
+            font-size: 0.9rem;
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 0.9rem;
+        }
+    }
+    .button-area{
+        height: 1.5rem;
+        .checkboxtext:after{
+            height: 1.3rem;
+            font-size: 0.7rem;
+            top: 2%;
+            left: 1%;
+            line-height: 1.3rem;
+        }
+    }
+    .cvphoto{
+        p{
+            width: 130%;
+            margin-top: 5%;
+        }
+    }
+}
+@media screen and (max-width: 1025px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .square1{
+            display: none;
+        }
+        .square2{
+            display: none;
+        }
+    .aboutme{
+        width: 100%;
+        margin: {
+            top: 5%;
+        }
+        img{
+            width: 80%;
+            margin: {
+            bottom: -8%;
+        }
+        }
+        h1{
+            font-size: 3rem;
+            width: 80%;
+        }
+        p {
+            font-size: 2rem;
+            width: 80%;
+        }
+        .cvbtn{
+            font-size: 2rem;
+        }
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .aboutwebsites{
+        width: 100%;
+        p{
+            width: 80%;
+        }
+        margin-top: 30%;
+    }
+    .homer{
+        top: 0rem;
+        left: 146%;
+    }
+    .marge{
+        top: -3rem;
+        right: 128%;
+    }
+    .webgallery{
+        flex-direction: column;
+    }
+    .webgallerywrapper{
+        width: 80%;
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+    .aboutgraphics{
+        width: 100%;
+        p{
+            width: 80%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            };
+        }
+
+    }
+    .graphicgallery{
+        height: 30rem;
+        width: 150%;
+    }
+    .contacts{
+        top: 2.5%;
+        left: 5%;
+        width: 90%;
+        padding: {
+            top: 1.5%;
+            bottom: 1.5%;
+        };
+        .logo{
+            width: 60%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            }
+        }
+    }
+    .contactwrapper{
+        h3{
+            font-size: 1rem;
+        }
+        h3 a {
+            font-size: 1.4rem;
+        }
+        width: 40%;
+    }
+    
+    .cross{
+        font-size: 1.5rem;
+    }
+    .contactbtn{
+        width: 75%;
+        margin-bottom: 1%;
+    }
+    .presentation{
+        h2{
+            margin-bottom: 1%;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .cvphoto{
+        display: none;
+    }
+    .cvphotosecret{
+        display: block;
+        width: 30%;
+    }
+    .cvbody{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whyprogrammer{
+        margin-top: 5%;
+        width: 80%;
+        p{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.7rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: 5%;
+        width: 80%;
+        h3{
+            font-size: 1.7rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 1.5rem;
+        }
+    }
+    #feedbacktextsecret{
+        display: block;
+    }
+    .button-area{
+        height: 2rem;
+        .checkboxtext:after{
+            height: 1.7rem;
+            font-size: 1rem;
+            top: 2%;
+            left: 1%;
+            line-height: 1.7rem;
+        }
+    }
+    .cvphoto{
+        p{
+            width: 130%;
+            margin-top: 5%;
+        }
+    }
+    .formular{
+        h2{
+            margin: {
+                bottom: 5%;
+            }
+        }
+        width: 90%;
+        top: 5rem;
+        left: 2rem;
+        .formrow{
+        width: 90%;
+        margin: {
+                bottom: 5%;
+            }
+        }
+        .formarea{
+            width: 90%;
+            margin: {
+                bottom: 5%;
+            }
+        }
+        .formsubmit{
+            margin: {
+                bottom: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .square1{
+            display: none;
+        }
+        .square2{
+            display: none;
+        }
+    .aboutme{
+        width: 100%;
+        margin: {
+            top: 5%;
+        }
+        h1{
+            font-size: 2rem;
+            width: 80%;
+        }
+        p {
+            font-size: 1.5rem;
+            width: 80%;
+        }
+        .cvbtn{
+            font-size: 1.5rem;
+        }
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .aboutwebsites{
+        width: 100%;
+        p{
+            width: 80%;
+        }
+    }
+    .webgallery{
+        flex-direction: column;
+    }
+    .webgallerywrapper{
+        width: 80%;
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+    .aboutgraphics{
+        width: 100%;
+        p{
+            width: 80%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            };
+        }
+
+    }
+    .graphicgallery{
+        height: 20rem;
+        width: 150%;
+    }
+    .contacts{
+        top: 2.5%;
+        left: 5%;
+        width: 90%;
+        padding: {
+            top: 1.5%;
+            bottom: 1.5%;
+        };
+        .logo{
+            width: 60%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            }
+        }
+    }
+    .contactwrapper{
+        h3{
+            font-size: 1rem;
+        }
+        h3 a {
+            font-size: 1.4rem;
+        }
+        width: 40%;
+    }
+    
+    .cross{
+        font-size: 1.5rem;
+    }
+    .contactbtn{
+        width: 75%;
+        margin-bottom: 1%;
+    }
+    .presentation{
+        h2{
+            margin-bottom: 1%;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .cvphoto{
+        display: none;
+    }
+    .cvphotosecret{
+        display: block;
+        width: 30%;
+    }
+    .cvbody{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whyprogrammer{
+        margin-top: 5%;
+        width: 80%;
+        p{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.7rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: 5%;
+        width: 80%;
+        h3{
+            font-size: 1.7rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 1.5rem;
+        }
+    }
+    .button-area{
+        height: 2rem;
+        .checkboxtext:after{
+            height: 1.7rem;
+            font-size: 1rem;
+            top: 2%;
+            left: 1%;
+            line-height: 1.7rem;
+        }
+    }
+    .cvphoto{
+        p{
+            width: 130%;
+            margin-top: 5%;
+        }
+    }
+    .formular{
+        h2{
+            margin: {
+                bottom: 5%;
+            }
+        }
+        width: 90%;
+        top: 5rem;
+        left: 2rem;
+        .formrow{
+        width: 90%;
+        margin: {
+                bottom: 5%;
+            }
+        }
+        .formarea{
+            width: 90%;
+            margin: {
+                bottom: 5%;
+            }
+        }
+        .formsubmit{
+            margin: {
+                bottom: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    .mainscreen{
+        margin-top: 0;
+    }
+    .aboutme{
+        width: 100%;
+        margin: {
+            top: 5%;
+        }
+        h1{
+            font-size: 1.8rem;
+            width: 80%;
+        }
+        p {
+            font-size: 1.2rem;
+            width: 80%;
+        }
+        .cvbtn{
+            font-size: 1.5rem;
+        }
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .aboutwebsites{
+        width: 100%;
+        p{
+            width: 80%;
+        }
+    }
+    .homer{
+        width: 200%;
+        position: absolute;
+        top: -7rem;
+        left: 72%;
+    }
+    .marge{
+        display: none;
+        width: 200%;
+        position: absolute;
+        top: -7rem;
+        right: 39%;
+    }
+    .webgallery{
+        flex-direction: column;
+    }
+    .webgallerywrapper{
+        width: 80%;
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    .aboutgraphics{
+        width: 100%;
+        p{
+            width: 80%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            };
+        }
+
+    }
+    .graphicgallery{
+        height: 20rem;
+        width: 150%;
+    }
+    .contacts{
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        padding: {
+            top: 0.5%;
+            bottom: 0.5%;
+        };
+        .logo{
+            width: 60%;
+            padding: {
+                top: 5%;
+                bottom: 5%;
+            }
+        }
+    }
+    .contactwrapper{
+        h3{
+            font-size: 1rem;
+        }
+        h3 a {
+            font-size: 0.7rem;
+        }
+        width: 40%;
+    }
+    
+    .cross{
+        font-size: 1.5rem;
+    }
+    .contactbtn{
+        width: 75%;
+        margin-bottom: 1%;
+    }
+    .presentation{
+        h2{
+            margin-bottom: 1%;
+        }
+    }
+    .cvhead{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .cvphoto{
+        display: none;
+    }
+    .cvphotosecret{
+        display: block;
+        width: 30%;
+    }
+    .cvbody{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whyprogrammer{
+        margin-top: 5%;
+        width: 80%;
+        p{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.7rem;
+            margin-bottom: 1%;
+        }
+        #cvcontactbtn{
+            margin-top: 10%;
+        }
+    }
+    .myknowledge{
+        margin-top: 5%;
+        width: 80%;
+        h3{
+            font-size: 1.7rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: {
+                top: 15%;
+                bottom: 1%;
+            };
+        }
+        li{
+            font-size: 1rem;
+        }
+        .idea{
+        width: 30%;
+        text-align: center;
+        }
+        .resultbtn{
+                width: 50%;
+            }
+        .result{
+            height: 5rem;
+            padding: {
+                top: 5%;
+            }
+        }
+    }
+    .button-area{
+        height: 2rem;
+        width: 30%;
+        .checkboxtext:after{
+            height: 1.7rem;
+            font-size: 1rem;
+            top: 2%;
+            left: 1%;
+            line-height: 1.7rem;
+        }
+    }
+    .cvphoto{
+        p{
+            width: 130%;
+            margin-top: 5%;
+        }
+    }
+    .formular{
+        h2{
+            margin: {
+                bottom: 5%;
+            }
+        }
+        width: 90%;
+        top: 5rem;
+        left: 1rem;
+        .formrow{
+        width: 90%;
+        margin: {
+                bottom: 5%;
+            }
+        }
+        .formarea{
+            width: 90%;
+            margin: {
+                bottom: 5%;
+            }
+        }
+        .formsubmit{
+            margin: {
+                bottom: 5%;
+            }
+        }
+    }   
+}
+    
+

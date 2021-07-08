@@ -1,0 +1,2313 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000310}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000315}}
+body {
+  min-height: 100vh;
+  background: #080C17;
+  color: #E4E0F5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000320}}
+h1 {
+  font-size: 4rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000323}}
+h2 {
+  font-size: 3rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000326}}
+p {
+  font-size: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000330}}
+.mainscreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000339}}
+.square1 {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000342}}
+.square1 img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000352}}
+.square1:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 10px solid #fff;
+  filter: blur(5px);
+  animation: draw 1s linear forwards;
+}
+
+@keyframes draw {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f50010;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f50010;
+    border-left-color: #f50010;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f50010;
+    border-left-color: #f50010;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\0000393}}
+.square1:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 10px solid transparent;
+  filter: blur(5px);
+  animation: draw2 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes draw2 {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-top-color: #f50010;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: #f50010;
+    border-right-color: #f50010;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #f50010;
+    border-right-color: #f50010;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003134}}
+.hoverSQ1:hover {
+  box-shadow: 0 0 50px #f50010, inset 0 0 50px #f50010;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003138}}
+.square2 {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003141}}
+.square2 img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003151}}
+.square2:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 10px solid #fff;
+  filter: blur(5px);
+  animation: draw3 1s linear forwards;
+}
+
+@keyframes draw3 {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-top-color: #15ff00;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: #15ff00;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #15ff00;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #15ff00;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #15ff00;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003192}}
+.square2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 10px solid transparent;
+  filter: blur(5px);
+  animation: draw4 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes draw4 {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #15ff00;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: transparent;
+    border-right-color: #15ff00;
+    border-bottom-color: #15ff00;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: #15ff00;
+    border-bottom-color: #15ff00;
+    border-left-color: transparent;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003233}}
+.hoverSQ2:hover {
+  box-shadow: 0 0 50px #15ff00, inset 0 0 50px #15ff00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003237}}
+.aboutme {
+  width: 30%;
+  max-height: 57rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003245}}
+.aboutme img {
+  width: 100%;
+  margin-top: -2%;
+  margin-bottom: -12%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003253}}
+.aboutme .aboutmewrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003260}}
+.aboutme h1 {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003263}}
+.aboutme .h1ityped {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003267}}
+.aboutme .cvbtn {
+  width: 30%;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: red;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px #479DC2, inset 0 0 10px #479DC2;
+  margin-top: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003284}}
+.aboutme .cvbtn:hover {
+  color: #0f0;
+  transition: color .5s;
+  cursor: pointer;
+  box-shadow: 0 0 15px #479DC2, inset 0 0 15px #479DC2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003297}}
+.aboutwebsites {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003305}}
+.aboutwebsites .firstmessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003311}}
+.aboutwebsites h1 {
+  margin-bottom: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003314}}
+.aboutwebsites p {
+  width: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: justify;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003323}}
+.homerjoke {
+  width: 30%;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003327}}
+.homer {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+  left: 161%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003334}}
+.marge {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  right: 146%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003341}}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003347}}
+.webgallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003353}}
+.webgallerywrapper {
+  width: 30%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003358}}
+.webgallerywrapper img {
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003362}}
+.webgallerywrapper h3 {
+  font-size: 2.5rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003370}}
+.imgborder:hover {
+  box-shadow: 0 0 25px #f50010, inset 0 0 30px #f50010;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003374}}
+.joke {
+  cursor: crosshair;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003380}}
+.aboutgraphics {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003388}}
+.aboutgraphics .firstmessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003394}}
+.aboutgraphics h1 {
+  margin-bottom: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003397}}
+.aboutgraphics p {
+  width: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: justify;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003406}}
+.graphicgallery {
+  position: relative;
+  background: #e4e4e4;
+  z-index: -10;
+  width: 50rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 10px solid #fff;
+  box-shadow: 0 0 20px #0f0, inset 0 0 20px #0f0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003424}}
+.bugs {
+  width: 30%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003427}}
+.picingall {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003433}}
+#logs {
+  z-index: -1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003436}}
+#girls {
+  z-index: -2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003439}}
+#pictures {
+  z-index: -3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003445}}
+.contactbtn {
+  width: 30%;
+  background: #080C17;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+  border: 0.5vh solid #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003460}}
+#webcontactbtn {
+  box-shadow: 0 0 1vh red, inset 0 0 1vh red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003464}}
+#webcontactbtn:hover {
+  box-shadow: 0 0 3vh red, inset 0 0 3vh red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003469}}
+#graphiccontactbtn {
+  margin-top: 2%;
+  box-shadow: 0 0 1vh #0f0, inset 0 0 1vh #0f0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003474}}
+#graphiccontactbtn:hover {
+  box-shadow: 0 0 3vh #0f0, inset 0 0 3vh #0f0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003478}}
+#cvcontactbtn {
+  box-shadow: 0 0 1vh red, inset 0 0 1vh red;
+  width: 90%;
+  margin-top: 2%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003491}}
+#cvcontactbtn:hover {
+  box-shadow: 0 0 3vh red, inset 0 0 3vh red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003496}}
+.contacts {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+  background: #121236;
+  border: 0.5vh solid #fff;
+  z-index: 5;
+  padding-top: 0.5%;
+  padding-bottom: 2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003507}}
+.contacts .logo {
+  margin: 0 auto;
+  width: 30%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003516}}
+.contactswrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003522}}
+.contactwrapper {
+  width: 15%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003529}}
+.contactwrapper h3 {
+  font-size: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003530}}
+.contactwrapper h3 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003537}}
+.contactwrapper img {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003544}}
+.crosswrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 0%;
+  padding-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003553}}
+.cross {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003560}}
+#webcontacts {
+  box-shadow: 0 0 2vh red, inset 0 0 2vh red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003564}}
+.back-to-top {
+  color: #f50010;
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+  z-index: 10;
+  display: block;
+  opacity: 0.7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003573}}
+.back-to-top:hover {
+  opacity: 1;
+  color: #15ff00;
+  transition: 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003581}}
+.cvhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003587}}
+.cvhead h1 {
+  font-size: 4rem;
+  margin-bottom: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003591}}
+.cvhead h2 {
+  font-size: 3rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003596}}
+.cvbody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: justify;
+  order: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003604}}
+.whyprogrammer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003611}}
+.whyprogrammer p {
+  font-size: 2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-indent: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003619}}
+.whyprogrammer h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003624}}
+.cvh3red {
+  text-shadow: 0 0 0.5rem #f50010, 0 0 1rem #f50010;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003627}}
+.cvh3green {
+  text-shadow: 0 0 0.5rem #15ff00, 0 0 1rem #15ff00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003630}}
+.cvphoto {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003636}}
+.cvphoto img {
+  width: 100%;
+  border-radius: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003640}}
+.cvphoto p {
+  width: 130%;
+  margin-top: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003646}}
+.cvphoto {
+  width: 20%;
+  display: flex;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003650}}
+.cvphoto img {
+  width: 100%;
+  border-radius: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003654}}
+.cvphoto p {
+  width: 130%;
+  margin-top: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003660}}
+.cvphotosecret {
+  display: none;
+  width: 20%;
+  margin-top: 5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003664}}
+.cvphotosecret img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003669}}
+.myknowledge {
+  width: 30%;
+  margin-top: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003672}}
+.myknowledge .boxshadow-red {
+  box-shadow: 0 0 15px #f50010, inset 0 0 15px #f50010;
+  border-radius: 110px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003677}}
+.myknowledge .boxshadow-green {
+  box-shadow: 0 0 15px #15ff00, inset 0 0 15px #15ff00;
+  border-radius: 110px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003682}}
+.myknowledge li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003693}}
+.myknowledge li h5 {
+  width: 30%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003697}}
+.myknowledge h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003701}}
+.myknowledge h4 {
+  font-size: 1.9rem;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003706}}
+.myknowledge p {
+  font-size: 2rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-indent: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003714}}
+.myknowledge .idea {
+  width: 57%;
+  color: #15ff00;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003719}}
+.myknowledge .resultbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30%;
+  height: 3rem;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003737}}
+.myknowledge .resultbtn:before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 2px solid transparent;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003747}}
+.myknowledge .resultbtn:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 2px solid transparent;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003757}}
+.myknowledge .resultbtn:hover:before {
+  height: 3rem;
+  width: 100%;
+  border: 5px solid #f50010;
+  filter: blur(2px);
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.5s linear;
+  transition: width 0.5s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003767}}
+.myknowledge .resultbtn:hover::after {
+  height: 3rem;
+  width: 100%;
+  border: 5px solid #15ff00;
+  filter: blur(2px);
+  border-left: none;
+  border-top: none;
+  transition: height 0.5s linear;
+  transition: width 0.5s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003777}}
+.myknowledge .result {
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #15ff00;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003785}}
+.myknowledge a {
+  color: #479DC2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003789}}
+.button-area {
+  width: 13%;
+  height: 3rem;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003793}}
+.button-area .main-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e4e4e4;
+  border-radius: 110px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003802}}
+.button-area .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003813}}
+.button-area .checkboxtext:after {
+  content: 'NE';
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 45%;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f50010;
+  border: 1px solid black;
+  color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 100%;
+  transition: .4s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003830}}
+.button-area .checkbox:checked + .checkboxtext:after {
+  content: "ANO";
+  left: 50%;
+  background: green;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003836}}
+.formular {
+  display: none;
+  width: 70%;
+  background-color: #121236;
+  position: fixed;
+  top: 10;
+  left: 10;
+  text-align: center;
+  border: 0.5vh solid #fff;
+  box-shadow: 0 0 2vh #f50010, inset 0 0 2vh #f50010;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003847}}
+.formular h2 {
+  margin-top: -2%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003850}}
+.formular .formrow {
+  width: 50rem;
+  text-align: center;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003862}}
+.formular .formarea {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003865}}
+.formular .formsubmit {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  padding-left: .5%;
+  padding-right: .5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003877}}
+.formular .formsubmit:hover {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003881}}
+.form-result {
+  background-color: #080C17;
+  width: 70%;
+  height: 12rem;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  text-align: center;
+  padding-top: 4%;
+  border: 0.5vh solid #fff;
+  border-radius: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003893}}
+.succes {
+  color: #15ff00;
+  box-shadow: 0 0 2vh #15ff00, inset 0 0 2vh #15ff00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003898}}
+.error {
+  color: #f50010;
+  box-shadow: 0 0 2vh #f50010, inset 0 0 2vh #f50010;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003903}}
+#feedbacktextsecret {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003907}}
+.ityped-cursor {
+  font-size: 100%;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003915}}
+.cvh1ityped:after {
+  content: '|';
+  color: #15ff00;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003925}}
+.cvh2ityped:after {
+  content: '|';
+  color: #479DC2;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003934}}
+.cvh3ityped:after {
+  content: '|';
+  color: #f50010;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003943}}
+.cvh4ityped:after {
+  content: '|';
+  color: #f50010;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003952}}
+.cvh5ityped:after {
+  content: '|';
+  color: #f50010;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003961}}
+.no-after:after {
+  content: none;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1920px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003984}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003987}}
+  .aboutme {
+    height: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003989}}
+  .aboutme h1 {
+    font-size: 3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003992}}
+  .aboutme p {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003996}}
+  h1 {
+    font-size: 3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\00003999}}
+  h2 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031002}}
+  h3 {
+    font-size: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031005}}
+  p {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031009}}
+  .webgallerywrapper h3 {
+    font-size: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031013}}
+  .graphicgallery {
+    height: 30rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031016}}
+  .contacts {
+    top: 2%;
+    left: 10%;
+    width: 80%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031026}}
+  .contactwrapper h3 a {
+    font-size: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031031}}
+  .cvhead h1 {
+    font-size: 3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031034}}
+  .cvhead h2 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031038}}
+  .whyprogrammer {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031040}}
+  .whyprogrammer p {
+    font-size: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031043}}
+  .whyprogrammer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031047}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031051}}
+  .myknowledge {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031053}}
+  .myknowledge h3 {
+    font-size: 1.7rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031056}}
+  .myknowledge h4 {
+    font-size: 1.6rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031059}}
+  .myknowledge p {
+    font-size: 1.5rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031066}}
+  .myknowledge li {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031073}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031077}}
+  .aboutme h1 {
+    font-size: 2.1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031080}}
+  .aboutme p {
+    font-size: 1.3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031083}}
+  .aboutme .cvbtn {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031088}}
+  h1 {
+    font-size: 2.1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031091}}
+  h2 {
+    font-size: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031094}}
+  h3 {
+    font-size: 1.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031097}}
+  p {
+    font-size: 1.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031101}}
+  .webgallerywrapper h3 {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031105}}
+  .graphicgallery {
+    height: 20rem;
+    width: 150%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031110}}
+  .MQ1600 p {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031117}}
+  .homer {
+    top: 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031120}}
+  .marge {
+    top: 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031123}}
+  .contacts {
+    top: 2%;
+    left: 10%;
+    width: 80%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031132}}
+  .contactwrapper {
+    width: 15%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031133}}
+  .contactwrapper h3 a {
+    font-size: 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031138}}
+  .logo {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031141}}
+  .cross {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031144}}
+  .contactbtn {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031148}}
+  .presentation h2 {
+    margin-bottom: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031153}}
+  .cvhead h1 {
+    font-size: 2.1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031156}}
+  .cvhead h2 {
+    font-size: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031160}}
+  .whyprogrammer {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031162}}
+  .whyprogrammer p {
+    font-size: 1.2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031165}}
+  .whyprogrammer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031169}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031173}}
+  .myknowledge {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031175}}
+  .myknowledge h3 {
+    font-size: 1.3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031178}}
+  .myknowledge h4 {
+    font-size: 1.2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031181}}
+  .myknowledge p {
+    font-size: 1.2rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031188}}
+  .myknowledge li {
+    font-size: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031192}}
+  .button-area {
+    height: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031194}}
+  .button-area .checkboxtext:after {
+    height: 1.6rem;
+    font-size: 0.7rem;
+    top: 5%;
+    left: 1%;
+    line-height: 1.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031203}}
+  .cvphoto p {
+    width: 130%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1366px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031211}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031215}}
+  .aboutme h1 {
+    font-size: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031218}}
+  .aboutme p {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031221}}
+  .aboutme .cvbtn {
+    font-size: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031226}}
+  h1 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031229}}
+  h2 {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031232}}
+  h3 {
+    font-size: 1.1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031235}}
+  p {
+    font-size: 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031239}}
+  .webgallerywrapper h3 {
+    font-size: 1.1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031243}}
+  .graphicgallery {
+    height: 20rem;
+    width: 150%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031248}}
+  .MQ1600 p {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031255}}
+  .contacts {
+    top: 2%;
+    left: 10%;
+    width: 80%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031264}}
+  .contactwrapper {
+    width: 15%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031265}}
+  .contactwrapper h3 a {
+    font-size: 0.8rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031270}}
+  .logo {
+    width: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031273}}
+  .cross {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031276}}
+  .contactbtn {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031280}}
+  .presentation h2 {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031285}}
+  .cvhead h1 {
+    font-size: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031288}}
+  .cvhead h2 {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031292}}
+  .whyprogrammer {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031294}}
+  .whyprogrammer p {
+    font-size: 0.9rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031297}}
+  .whyprogrammer h3 {
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031301}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031305}}
+  .myknowledge {
+    margin-top: -5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031307}}
+  .myknowledge h3 {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031310}}
+  .myknowledge h4 {
+    font-size: 0.9rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031313}}
+  .myknowledge p {
+    font-size: 0.9rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031320}}
+  .myknowledge li {
+    font-size: 0.9rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031324}}
+  .button-area {
+    height: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031326}}
+  .button-area .checkboxtext:after {
+    height: 1.3rem;
+    font-size: 0.7rem;
+    top: 2%;
+    left: 1%;
+    line-height: 1.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031335}}
+  .cvphoto p {
+    width: 130%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031342}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031345}}
+  .square1 {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031348}}
+  .square2 {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031351}}
+  .aboutme {
+    width: 100%;
+    margin-top: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031356}}
+  .aboutme img {
+    width: 80%;
+    margin-bottom: -8%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031362}}
+  .aboutme h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031366}}
+  .aboutme p {
+    font-size: 2rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031370}}
+  .aboutme .cvbtn {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031375}}
+  h1 {
+    font-size: 3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031378}}
+  h2 {
+    font-size: 2.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031381}}
+  h3 {
+    font-size: 2.4rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031384}}
+  p {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031387}}
+  .aboutwebsites {
+    width: 100%;
+    margin-top: 30%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031389}}
+  .aboutwebsites p {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031394}}
+  .homer {
+    top: 0rem;
+    left: 146%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031398}}
+  .marge {
+    top: -3rem;
+    right: 128%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031402}}
+  .webgallery {
+    flex-direction: column;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031405}}
+  .webgallerywrapper {
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031407}}
+  .webgallerywrapper h3 {
+    font-size: 1.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031411}}
+  .aboutgraphics {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031413}}
+  .aboutgraphics p {
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031422}}
+  .graphicgallery {
+    height: 30rem;
+    width: 150%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031426}}
+  .contacts {
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031434}}
+  .contacts .logo {
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031442}}
+  .contactwrapper {
+    width: 40%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031443}}
+  .contactwrapper h3 {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031446}}
+  .contactwrapper h3 a {
+    font-size: 1.4rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031452}}
+  .cross {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031455}}
+  .contactbtn {
+    width: 75%;
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031460}}
+  .presentation h2 {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031465}}
+  .cvhead h1 {
+    font-size: 2.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031468}}
+  .cvhead h2 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031472}}
+  .cvphoto {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031475}}
+  .cvphotosecret {
+    display: block;
+    width: 30%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031479}}
+  .cvbody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031484}}
+  .whyprogrammer {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031487}}
+  .whyprogrammer p {
+    font-size: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031490}}
+  .whyprogrammer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031494}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031498}}
+  .myknowledge {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031501}}
+  .myknowledge h3 {
+    font-size: 1.7rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031504}}
+  .myknowledge h4 {
+    font-size: 1.6rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031507}}
+  .myknowledge p {
+    font-size: 1.5rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031514}}
+  .myknowledge li {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031518}}
+  #feedbacktextsecret {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031521}}
+  .button-area {
+    height: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031523}}
+  .button-area .checkboxtext:after {
+    height: 1.7rem;
+    font-size: 1rem;
+    top: 2%;
+    left: 1%;
+    line-height: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031532}}
+  .cvphoto p {
+    width: 130%;
+    margin-top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031537}}
+  .formular {
+    width: 90%;
+    top: 5rem;
+    left: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031538}}
+  .formular h2 {
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031546}}
+  .formular .formrow {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031552}}
+  .formular .formarea {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031558}}
+  .formular .formsubmit {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031566}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031569}}
+  .square1 {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031572}}
+  .square2 {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031575}}
+  .aboutme {
+    width: 100%;
+    margin-top: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031580}}
+  .aboutme h1 {
+    font-size: 2rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031584}}
+  .aboutme p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031588}}
+  .aboutme .cvbtn {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031593}}
+  h1 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031596}}
+  h2 {
+    font-size: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031599}}
+  h3 {
+    font-size: 1.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031602}}
+  p {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031605}}
+  .aboutwebsites {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031607}}
+  .aboutwebsites p {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031611}}
+  .webgallery {
+    flex-direction: column;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031614}}
+  .webgallerywrapper {
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031616}}
+  .webgallerywrapper h3 {
+    font-size: 1.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031620}}
+  .aboutgraphics {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031622}}
+  .aboutgraphics p {
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031631}}
+  .graphicgallery {
+    height: 20rem;
+    width: 150%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031635}}
+  .contacts {
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031643}}
+  .contacts .logo {
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031651}}
+  .contactwrapper {
+    width: 40%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031652}}
+  .contactwrapper h3 {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031655}}
+  .contactwrapper h3 a {
+    font-size: 1.4rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031661}}
+  .cross {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031664}}
+  .contactbtn {
+    width: 75%;
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031669}}
+  .presentation h2 {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031674}}
+  .cvhead h1 {
+    font-size: 2.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031677}}
+  .cvhead h2 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031681}}
+  .cvphoto {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031684}}
+  .cvphotosecret {
+    display: block;
+    width: 30%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031688}}
+  .cvbody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031693}}
+  .whyprogrammer {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031696}}
+  .whyprogrammer p {
+    font-size: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031699}}
+  .whyprogrammer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031703}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031707}}
+  .myknowledge {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031710}}
+  .myknowledge h3 {
+    font-size: 1.7rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031713}}
+  .myknowledge h4 {
+    font-size: 1.6rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031716}}
+  .myknowledge p {
+    font-size: 1.5rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031723}}
+  .myknowledge li {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031727}}
+  .button-area {
+    height: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031729}}
+  .button-area .checkboxtext:after {
+    height: 1.7rem;
+    font-size: 1rem;
+    top: 2%;
+    left: 1%;
+    line-height: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031738}}
+  .cvphoto p {
+    width: 130%;
+    margin-top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031743}}
+  .formular {
+    width: 90%;
+    top: 5rem;
+    left: 2rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031744}}
+  .formular h2 {
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031752}}
+  .formular .formrow {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031758}}
+  .formular .formarea {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031764}}
+  .formular .formsubmit {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 415px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031772}}
+  .mainscreen {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031775}}
+  .aboutme {
+    width: 100%;
+    margin-top: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031780}}
+  .aboutme h1 {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031784}}
+  .aboutme p {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031788}}
+  .aboutme .cvbtn {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031793}}
+  h1 {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031796}}
+  h2 {
+    font-size: 1.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031799}}
+  h3 {
+    font-size: 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031802}}
+  p {
+    font-size: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031805}}
+  .aboutwebsites {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031807}}
+  .aboutwebsites p {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031811}}
+  .homer {
+    width: 200%;
+    position: absolute;
+    top: -7rem;
+    left: 72%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031817}}
+  .marge {
+    display: none;
+    width: 200%;
+    position: absolute;
+    top: -7rem;
+    right: 39%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031824}}
+  .webgallery {
+    flex-direction: column;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031827}}
+  .webgallerywrapper {
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031829}}
+  .webgallerywrapper h3 {
+    font-size: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031833}}
+  .aboutgraphics {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031835}}
+  .aboutgraphics p {
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031844}}
+  .graphicgallery {
+    height: 20rem;
+    width: 150%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031848}}
+  .contacts {
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031856}}
+  .contacts .logo {
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031864}}
+  .contactwrapper {
+    width: 40%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031865}}
+  .contactwrapper h3 {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031868}}
+  .contactwrapper h3 a {
+    font-size: 0.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031874}}
+  .cross {
+    font-size: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031877}}
+  .contactbtn {
+    width: 75%;
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031882}}
+  .presentation h2 {
+    margin-bottom: 1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031887}}
+  .cvhead h1 {
+    font-size: 2.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031890}}
+  .cvhead h2 {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031894}}
+  .cvphoto {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031897}}
+  .cvphotosecret {
+    display: block;
+    width: 30%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031901}}
+  .cvbody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031906}}
+  .whyprogrammer {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031909}}
+  .whyprogrammer p {
+    font-size: 1.5rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031912}}
+  .whyprogrammer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031916}}
+  .whyprogrammer #cvcontactbtn {
+    margin-top: 10%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031920}}
+  .myknowledge {
+    margin-top: 5%;
+    width: 80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031923}}
+  .myknowledge h3 {
+    font-size: 1.7rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031926}}
+  .myknowledge h4 {
+    font-size: 1.6rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031929}}
+  .myknowledge p {
+    font-size: 1.5rem;
+    padding-top: 15%;
+    padding-bottom: 1%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031936}}
+  .myknowledge li {
+    font-size: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031939}}
+  .myknowledge .idea {
+    width: 30%;
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031943}}
+  .myknowledge .resultbtn {
+    width: 50%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031946}}
+  .myknowledge .result {
+    height: 5rem;
+    padding-top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031953}}
+  .button-area {
+    height: 2rem;
+    width: 30%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031956}}
+  .button-area .checkboxtext:after {
+    height: 1.7rem;
+    font-size: 1rem;
+    top: 2%;
+    left: 1%;
+    line-height: 1.7rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031965}}
+  .cvphoto p {
+    width: 130%;
+    margin-top: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031970}}
+  .formular {
+    width: 90%;
+    top: 5rem;
+    left: 1rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031971}}
+  .formular h2 {
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031979}}
+  .formular .formrow {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031985}}
+  .formular .formarea {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Creative\%20Cloud\%20Files\/Programov\%C3\%A1n\%C3\%AD\/Webowky\/Moje_stranky_new\/style\.scss}line{font-family:\000031991}}
+  .formular .formsubmit {
+    margin-bottom: 5%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

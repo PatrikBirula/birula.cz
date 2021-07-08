@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_stavnatak.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="Jquery.js"></script>
+    <script src="script_stavnatak.js"></script>
+    <script src="ityped.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Co jsem si měl zjistit a co jsem vlastně zjistil</h1>
+    </header>
+    <article>
+        <ul class="navigation">
+            <li><a href="ajax_gallery1.html">AJAX <br>+ request a response</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="http.html">HTTP status codes</a></li>
+        </ul>
+    </article>
+    <section class="content">
+        <div class="changecontent">
+            <article class="mynewinformation" id="apiinfo">
+
+                <h2>API = databáze informací</h2>
+                <p>Soubory api jsou pro nás databází, ze které si taháme informace. Například pomocí JSONu. </p>
+                <h2>GET, POST, DELETE, PUT</h2>
+                <p>Jsou metody získávání informací, kde přes GET sbírám informace, přes POST je vypisuji, DELETE mažu a
+                    PUT
+                    aktualizuji.</p>
+                <h2>Příklady aplikací API</h2>
+                <div class="wrapperapiexample">
+                    <div class="apiexample" id="apiexample1">
+                        <h3>Google maps</h3>
+                        <p>
+                            Pokud si dám vyhledat restaurace v místě hledání, tak si mapy sáhnou do api databáze a
+                            vypíší mi
+                            je
+                            nad mapou (z mapy se stane vrstva)
+                        </p>
+                    </div>
+                    <div class="apiexample" id="apiexample2">
+                        <h3>Aplikace na počasí</h3>
+                        <p>
+                            Opět mi podle zadaných údajů vypíše aktuální předpověď, kterou si vytáhne z databáze, aniž
+                            bych
+                            musel
+                            neustále
+                            reloadovat web.
+                        </p>
+                    </div>
+                    <div class="apiexample" id="apiexample3">
+                        <h3>Přihlášení přes facebook, google apod.</h3>
+                        <p>
+                            Kde si zavoláme na server, zdali je již přihlášený k dané platformě, případně jej vyzveme
+                            aby se
+                            přihlásil, kde se nám
+                            správnost údajů ověřuje přímo na serveru platformy kam mi vysíláme request.
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapperapiexample2">
+                    <div class="apiexample" id="apiexample4">
+                        <h3>Facebook, twitter apod.</h3>
+                        <p>
+                            Stránky načítají nový obsah, aniž bych musel reloadovat web stránku, tím že vyšlou request
+                            na
+                            server a
+                            response zařadí do správné sekce.
+                        </p>
+                    </div>
+                    <div class="apiexample" id="apiexample5">
+                        <h3>Booking</h3>
+                        <p>
+                            Zde si posíláme například requesty na server, jestli je zvolený termín volno a server nám
+                            odpovídá
+                            zda ano či ne a dle toho vypíšem odpověď.
+                        </p>
+                    </div>
+                    <div class="apiexample" id="apiexample6">
+                        <h3>Spotify, Netflix apod</h3>
+                        <p>
+                            Přístupy do API se využívají ať už při vyhledávání, anebo při načítání obsahu, kde se mění
+                            jen
+                            požadované sektory.
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

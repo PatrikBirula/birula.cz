@@ -1,0 +1,312 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000310}}
+body {
+  background: #5E9FC9;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000314}}
+h1 {
+  font-size: 2.5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000317}}
+.navigation {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000324}}
+.navigation li {
+  background: #fcf700;
+  width: 32%;
+  height: 5rem;
+  border: 3px solid #130A06;
+  border-radius: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000335}}
+.navigation a {
+  text-decoration: none;
+  color: #ac4d00;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 1px black;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000345}}
+.navigation li:hover,
+.navigation li:focus {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000351}}
+.mynewinformation {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000358}}
+.mynewinformation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000364}}
+.mynewinformation p {
+  width: 40%;
+  font-size: 1.3rem;
+  margin-top: 0.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000372}}
+.examples {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000377}}
+.examples input {
+  text-align: center;
+  height: 2rem;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 1rem;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000385}}
+.examples .gombik {
+  height: 2.5rem;
+  cursor: pointer;
+  margin-top: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000392}}
+.examples .gombik:hover {
+  color: #ac4d00;
+  background: #fcf700;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\0000398}}
+.wrapper {
+  width: 30%;
+  height: 25rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003102}}
+.gallerymenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003111}}
+.gallerymenu li {
+  background: #fcf700;
+  width: 25%;
+  height: 0.5rem;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: 3px solid #130A06;
+  border-radius: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003126}}
+.gallerymenu a {
+  text-decoration: none;
+  color: #ac4d00;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 1px black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003132}}
+.gallerymenu a:hover,
+.gallerymenu a:focus {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003137}}
+.gallery-set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003142}}
+.gallery-set img {
+  width: 98%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003146}}
+.wrgallery {
+  border-left: 3px solid #fcf700;
+  border-right: 3px solid #fcf700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003150}}
+.wrapper-naseptavac {
+  width: 30%;
+  height: 25rem;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003155}}
+.form-control {
+  width: 80%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003158}}
+#result {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 20rem;
+  box-sizing: border-box;
+  z-index: 99;
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003170}}
+.list-group-item {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: pink;
+  list-style: none;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003182}}
+.wrapperapiexample {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003191}}
+.wrapperapiexample2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003200}}
+.apiexample {
+  width: 24%;
+  min-height: 15rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003205}}
+.apiexample h3 {
+  font-size: 1.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003208}}
+.apiexample p {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003212}}
+#apiexample1 {
+  background: #E5707E;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003215}}
+#apiexample2 {
+  background: #E8E9A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003218}}
+#apiexample3 {
+  background: #E6B566;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003221}}
+#apiexample4 {
+  background: #E5707E;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003224}}
+#apiexample5 {
+  background: #E8E9A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003227}}
+#apiexample6 {
+  background: #E6B566;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003230}}
+.wrapperhttpcodes {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003240}}
+.wrapperhttpcodes2 {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003250}}
+.httpcodes {
+  width: 30%;
+  min-height: 20rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003255}}
+.httpcodes h3 {
+  font-size: 1.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003258}}
+.httpcodes li {
+  list-style: none;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/patri\/Documents\/Webowky\/Moje_stranky_new\/stavnatak\/style_stavnatak\.scss}line{font-family:\00003264}}
+.fadeInLeft {
+  animation: fadeInLeft 3s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style_stavnatak.css.map */
